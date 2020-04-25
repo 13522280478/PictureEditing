@@ -79,39 +79,39 @@
                 android:layout_height="wrap_content" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/rl_filter"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_filter"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1">-->
 
-            <TextView
-                android:id="@+id/tv_filter"
-                android:layout_centerInParent="true"
-                android:text="@string/filter"
-                android:textSize="10dp"
-                android:drawableTop="@drawable/ic_filter_light"
-                android:textColor="@color/gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/tv_filter"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:text="@string/filter"-->
+<!--                android:textSize="10dp"-->
+<!--                android:drawableTop="@drawable/ic_filter_light"-->
+<!--                android:textColor="@color/gray"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </RelativeLayout>-->
 
-        <RelativeLayout
-            android:id="@+id/rl_sticker"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_sticker"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1">-->
 
-            <TextView
-                android:id="@+id/tv_sticker"
-                android:layout_centerInParent="true"
-                android:text="@string/sticker"
-                android:textSize="10dp"
-                android:textColor="@color/gray"
-                android:drawableTop="@drawable/ic_sticker_light"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/tv_sticker"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:text="@string/sticker"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textColor="@color/gray"-->
+<!--                android:drawableTop="@drawable/ic_sticker_light"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </RelativeLayout>-->
 
         <RelativeLayout
             android:id="@+id/rl_text"

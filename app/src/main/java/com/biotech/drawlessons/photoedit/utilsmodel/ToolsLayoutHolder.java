@@ -38,8 +38,8 @@ public class ToolsLayoutHolder implements View.OnClickListener {
     private void findViews() {
         mLlTools = mParentView.findViewById(R.id.ll_edit_tools);
         mRlCrop = mParentView.findViewById(R.id.rl_crop);
-        mRlFilter = mParentView.findViewById(R.id.rl_filter);
-        mRlSticker = mParentView.findViewById(R.id.rl_sticker);
+//        mRlFilter = mParentView.findViewById(R.id.rl_filter);
+//        mRlSticker = mParentView.findViewById(R.id.rl_sticker);
         mRlText = mParentView.findViewById(R.id.rl_text);
         mRlBrush = mParentView.findViewById(R.id.rl_brush);
         mTvBrush = mParentView.findViewById(R.id.tv_brush);
@@ -47,8 +47,8 @@ public class ToolsLayoutHolder implements View.OnClickListener {
 
     private void initListener() {
         mRlCrop.setOnClickListener(this);
-        mRlFilter.setOnClickListener(this);
-        mRlSticker.setOnClickListener(this);
+//        mRlFilter.setOnClickListener(this);
+//        mRlSticker.setOnClickListener(this);
         mRlText.setOnClickListener(this);
         mRlBrush.setOnClickListener(this);
     }
@@ -102,13 +102,13 @@ public class ToolsLayoutHolder implements View.OnClickListener {
                 mITools.onCropIconClick();
                 break;
 
-            case R.id.rl_filter:
-                mITools.onFilterIconClick();
-                break;
-
-            case R.id.rl_sticker:
-                mITools.onStickerIconClick();
-                break;
+//            case R.id.rl_filter:
+//                mITools.onFilterIconClick();
+//                break;
+//
+//            case R.id.rl_sticker:
+//                mITools.onStickerIconClick();
+//                break;
 
             case R.id.rl_text:
                 mITools.onTextIconClick();
