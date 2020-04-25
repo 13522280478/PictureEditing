@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:background="@color/Blk_1"
-    android:id="@+id/root_view"
+    android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -227,12 +227,7 @@
         android:visibility="gone"
         android:background="@color/white"/>
 
-<!--    <com.sohu.kan.common.view.loading.LoadingViewSns-->
-<!--        android:id="@+id/loading_view"-->
-<!--        android:background="@color/Blk_1_alpha_30"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--    </com.sohu.kan.common.view.loading.LoadingViewSns>-->
+
 
     <com.biotech.drawlessons.photoedit.resourcepicker.DragMediaResourcePickerView
         android:id="@+id/drag_resource_picker_view"

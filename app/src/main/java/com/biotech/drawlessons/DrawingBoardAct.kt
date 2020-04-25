@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import androidx.appcompat.app.AppCompatActivity
 import com.biotech.drawlessons.photoedit.utils.BitmapsManager
 import com.biotech.drawlessons.photoedit.utils.DrawInvoker
+import com.biotech.drawlessons.photoedit.utilsmodel.PhotoEditToolsHelper
 import kotlinx.android.synthetic.main.activity_photo_edit.*
 
 /**
@@ -19,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_photo_edit.*
  */
 class DrawingBoardAct : AppCompatActivity() {
     private val mUri by lazy { intent.getParcelableExtra<Uri>(KEY_URI) }
+    private lateinit var mToolsHelper: PhotoEditToolsHelper
 
     companion object {
         private const val KEY_URI = "key_uri"
@@ -36,6 +38,7 @@ class DrawingBoardAct : AppCompatActivity() {
         val manager = BitmapsManager()
         val invoker = DrawInvoker(manager)
         vDrawingBoard.init(invoker, manager, getPath(mUri))
+        mToolsHelper = PhotoEditToolsHelper(this, rootView, vDrawingBoard, manager, invoker)
     }
 
     fun getPath(uri: Uri?): String? {

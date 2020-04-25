@@ -50,7 +50,7 @@ public class ColorPickerAdapter extends RecyclerView.Adapter<ColorPickerAdapter.
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
         //是否点击
         //TODO:日夜间模式
-        viewHolder.mRec.setBorderColor(getResources().getColor(R.color.Blk_5));
+        viewHolder.mRec.setBorderColor(R.color.Blk_5);
         if (mData.get(position).getClick()) {
             viewHolder.itemView.setBackgroundDrawable(getResources().getDrawable(R.drawable.color_picker_item_bg_light));
         } else {
