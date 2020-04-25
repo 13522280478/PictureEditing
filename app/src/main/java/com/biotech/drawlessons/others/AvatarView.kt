@@ -1,10 +1,11 @@
-package com.biotech.drawlessons
+package com.biotech.drawlessons.others
 
-import android.animation.*
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
+import com.biotech.drawlessons.R
+import com.biotech.drawlessons.dp2px
 
 /**
  * @author TuXin
@@ -104,7 +105,9 @@ class AvatarView @JvmOverloads constructor(
         canvas.clipRect(-mBitmap.width * 4, -mBitmap.height, mBitmap.width * 4, 0)
         canvas.rotate(mFlipRotation)
         canvas.translate(-(OFFSET + mBitmap.width / 2F), -(OFFSET + mBitmap.height / 2))
-        canvas.drawBitmap(mBitmap, OFFSET, OFFSET, mPaint)
+        canvas.drawBitmap(mBitmap,
+            OFFSET,
+            OFFSET, mPaint)
         canvas.restore()
 
 
@@ -122,17 +125,21 @@ class AvatarView @JvmOverloads constructor(
         canvas.rotate(mFlipRotation)
         canvas.translate(-(OFFSET + mBitmap.width / 2F), -(OFFSET + mBitmap.height / 2))
 
-        canvas.drawBitmap(mBitmap, OFFSET, OFFSET, mPaint)
+        canvas.drawBitmap(mBitmap,
+            OFFSET,
+            OFFSET, mPaint)
         canvas.restore()
     }
 
     fun getAvatar(width: Int): Bitmap {
         val options = BitmapFactory.Options()
         options.inJustDecodeBounds = true
-        BitmapFactory.decodeResource(resources, R.drawable.ic_task_keep_going_on, options)
+        BitmapFactory.decodeResource(resources,
+            R.drawable.ic_task_keep_going_on, options)
         options.inJustDecodeBounds = false
         options.inDensity = options.outWidth
         options.inTargetDensity = width
-        return BitmapFactory.decodeResource(resources, R.drawable.ic_task_keep_going_on, options)
+        return BitmapFactory.decodeResource(resources,
+            R.drawable.ic_task_keep_going_on, options)
     }
 }

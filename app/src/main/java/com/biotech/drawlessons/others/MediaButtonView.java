@@ -1,4 +1,4 @@
-package com.biotech.drawlessons;
+package com.biotech.drawlessons.others;
 
 /**
  * @author TuXin
@@ -23,6 +23,8 @@ import android.view.ViewConfiguration;
 
 import androidx.annotation.Nullable;
 
+import com.biotech.drawlessons.R;
+import com.biotech.drawlessons.UtilsKt;
 import com.biotech.drawlessons.photoedit.utils.ArgbEvaluator;
 
 import static android.view.MotionEvent.ACTION_CANCEL;

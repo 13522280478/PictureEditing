@@ -6,16 +6,11 @@ import android.animation.PropertyValuesHolder
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.animation.AccelerateInterpolator
-import android.view.animation.TranslateAnimation
 import androidx.appcompat.app.AppCompatActivity
-import com.biotech.drawlessons.photoedit.utils.BitmapsManager
-import com.biotech.drawlessons.photoedit.utils.DrawInvoker
+import com.biotech.drawlessons.others.Rotate3dAnimation
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
-import java.io.File
-import java.io.FileInputStream
 
 
 class MainActivity : AppCompatActivity() {

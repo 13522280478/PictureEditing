@@ -1,10 +1,11 @@
-package com.biotech.drawlessons
+package com.biotech.drawlessons.others
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.widget.AppCompatImageView
+import com.biotech.drawlessons.dp2px
 
 /**
  * @author TuXin
@@ -31,7 +32,8 @@ class DashboardView @JvmOverloads constructor(
 
     init {
         mPaint.style = Paint.Style.STROKE
-        mPaint.strokeWidth = STROKE_WIDTH
+        mPaint.strokeWidth =
+            STROKE_WIDTH
 
         dash.addRect(0F, 0F, 2.dp2px(), 10.dp2px(), Path.Direction.CW)
         mPathEffect = PathDashPathEffect(dash, 50F, 0F, PathDashPathEffect.Style.ROTATE)
@@ -54,7 +56,8 @@ class DashboardView @JvmOverloads constructor(
             width / 2 + RADIUS,
             height / 2 + RADIUS,
             90 + OPEN_ANGLE / 2F,
-            360F - OPEN_ANGLE)
+            360F - OPEN_ANGLE
+        )
 
         mPathMeasure = PathMeasure(mPath, false)
 

@@ -1,4 +1,4 @@
-package com.biotech.drawlessons
+package com.biotech.drawlessons.others
 
 import android.content.Context
 import android.graphics.Camera
@@ -10,6 +10,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateInterpolator
 import androidx.core.view.children
+import com.biotech.drawlessons.R
+import com.biotech.drawlessons.getCameraLocationZ
 import kotlin.math.max
 
 /**
@@ -38,7 +40,9 @@ class RotatableViewGroup @JvmOverloads constructor(
         MarginLayoutParams {
 
         constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
-            val a = context.obtainStyledAttributes(attrs, R.styleable.RotatableViewGroup_Layout)
+            val a = context.obtainStyledAttributes(attrs,
+                R.styleable.RotatableViewGroup_Layout
+            )
             this.gravity =
                 a.getInt(
                     R.styleable.RotatableViewGroup_Layout_android_layout_gravity,
@@ -56,7 +60,8 @@ class RotatableViewGroup @JvmOverloads constructor(
             const val GRAVITY_UNDEFINE = -1
         }
 
-        var gravity: Int = GRAVITY_UNDEFINE
+        var gravity: Int =
+            GRAVITY_UNDEFINE
     }
 
     private fun ensureChildrenCount() {
@@ -224,7 +229,10 @@ class RotatableViewGroup @JvmOverloads constructor(
     }
 
     override fun generateLayoutParams(attrs: AttributeSet?): ViewGroup.LayoutParams {
-        return LayoutParams(context, attrs)
+        return LayoutParams(
+            context,
+            attrs
+        )
     }
 
     override fun generateLayoutParams(p: ViewGroup.LayoutParams?): ViewGroup.LayoutParams {
@@ -232,7 +240,10 @@ class RotatableViewGroup @JvmOverloads constructor(
     }
 
     override fun generateDefaultLayoutParams(): ViewGroup.LayoutParams {
-        return LayoutParams(0, 0)
+        return LayoutParams(
+            0,
+            0
+        )
     }
 
 }

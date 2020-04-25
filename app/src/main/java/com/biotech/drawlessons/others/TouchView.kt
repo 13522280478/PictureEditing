@@ -1,4 +1,4 @@
-package com.biotech.drawlessons
+package com.biotech.drawlessons.others
 
 import android.content.Context
 import android.util.AttributeSet
