@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+    <LinearLayout
+        android:id="@+id/ll_color_pick_view"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+        <!--android:src="@drawable/back_click_light"-->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:paddingBottom="17dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/back_click_light"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/scroll_bar_color"
+            android:layout_gravity="center_vertical"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_recyclerview_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>
+

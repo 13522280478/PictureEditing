@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">PhotoEdit</string>
+    <string name="app_name">DrawLessons</string>
+    <string name="cancel_sns">取消</string>
+    <string name="finish">完成</string>
+    <string name="crop">裁剪</string>
+    <string name="filter">滤镜</string>
+    <string name="sticker">贴纸</string>
+    <string name="text">文字</string>
+    <string name="doodle">涂鸦</string>
+    <string name="restore">还原</string>
+    <string name="rotation">旋转</string>
+    <string name="total_text_length_invalidate">累计输入文字已达70字符的上限</string>
+    <string name="material_count_invalidate">该类型素材添加已达上限</string>
 </resources>

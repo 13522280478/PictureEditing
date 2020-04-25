@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/Blk_1"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.biotech.drawlessons.photoedit.views.DrawingBoardView
+        android:id="@+id/vDrawingBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_edit_tools"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="@string/cancel_sns"
+        android:padding="14dp"
+        android:shadowDy="3"
+        android:shadowColor="@color/Blk_1_alpha_20"
+        android:shadowRadius="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="@string/finish"
+        android:layout_alignParentRight="true"
+        android:padding="14dp"
+        android:shadowDy="3"
+        android:shadowColor="@color/Blk_1_alpha_20"
+        android:shadowRadius="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.biotech.drawlessons.photoedit.tools.ColorPickerView
+        android:id="@+id/color_picker"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/color_pick_height"
+        android:layout_marginBottom="@dimen/edit_tool_height"
+        android:visibility="gone" />
+
+    <com.biotech.drawlessons.photoedit.tools.StrokeUtilView
+        android:id="@+id/stroke_util_view"
+        android:layout_width="52dp"
+        android:layout_height="@dimen/stroke_width_util_height"
+        android:layout_marginBottom="66dp"
+        android:layout_above="@+id/ll_edit_tools"
+        android:visibility="gone"
+        android:paddingLeft="14dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_edit_tools"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_tool_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:id="@+id/rl_crop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_crop"
+                android:layout_centerInParent="true"
+                android:text="@string/crop"
+                android:textSize="10dp"
+                android:drawableTop="@drawable/ic_crop_image_light"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_filter"
+                android:layout_centerInParent="true"
+                android:text="@string/filter"
+                android:textSize="10dp"
+                android:drawableTop="@drawable/ic_filter_light"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sticker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sticker"
+                android:layout_centerInParent="true"
+                android:text="@string/sticker"
+                android:textSize="10dp"
+                android:textColor="@color/gray"
+                android:drawableTop="@drawable/ic_sticker_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_centerInParent="true"
+                android:text="@string/text"
+                android:textSize="10dp"
+                android:textColor="@color/gray"
+                android:drawableTop="@drawable/ic_text_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_brush"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_brush"
+                android:layout_centerInParent="true"
+                android:text="@string/doodle"
+                android:textSize="10dp"
+                android:textColor="@color/gray"
+                android:drawableTop="@drawable/ic_brush_un_selected_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_expand_utils"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_crop_utils"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_crop_rotate_height">
+            <com.biotech.drawlessons.photoedit.views.IconTextView
+                android:id="@+id/tv_restore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/restore"
+                android:drawablePadding="4dp"
+                android:textColor="@color/gray"
+                android:gravity="center"/>
+
+            <com.biotech.drawlessons.photoedit.views.IconTextView
+                android:id="@+id/tv_rotate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/rotation"
+                android:drawablePadding="4dp"
+                android:textColor="@color/gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_filter_tools"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filter_list_view_height">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/crop_utils_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Blk_7"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_crop_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_crop_confirm_height">
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_centerVertical="true"
+                android:padding="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_light"/>
+
+            <ImageView
+                android:id="@+id/iv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:src="@drawable/ic_yellow_hook_light"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_draft"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_tool_height"
+        android:src="@drawable/ic_draft_normal_light"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:background="@color/white"/>
+
+<!--    <com.sohu.kan.common.view.loading.LoadingViewSns-->
+<!--        android:id="@+id/loading_view"-->
+<!--        android:background="@color/Blk_1_alpha_30"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </com.sohu.kan.common.view.loading.LoadingViewSns>-->
+
+    <com.biotech.drawlessons.photoedit.resourcepicker.DragMediaResourcePickerView
+        android:id="@+id/drag_resource_picker_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

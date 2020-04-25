@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_uri_for_image_view_in_photo_wall" type="id" />
+    <item name="tag_uri_for_image_view_in_photo_wall_for_re_use" type="id" />
+
+    <item name="tag_uri_for_image_view_avatar_in_chat" type="id" />
+    <item name="tag_uri_for_image_view_image_in_chat" type="id" />
+    <item name="tag_for_common_header" type="id" />
+
+    <item name="tag_item_data" type="id"/>
+
+
+
+    <item name="source_feed_root" type="id" />
+    <item name="source_feed_news_root" type="id" />
+    <item name="source_feed_photo_root" type="id" />
+    <item name="source_feed_news_body" type="id" />
+    <item name="source_feed_photo_body" type="id" />
+    <item name="source_feed_news_picture" type="id" />
+    <item name="source_feed_news_picture_video" type="id" />
+    <item name="source_feed_news_context_text" type="id" />
+    <item name="source_feed_news_picture_ceil" type="id" />
+
+
+    <item name="sns_qr_decode" type="id" />
+    <item name="sns_qr_decode_failed" type="id" />
+    <item name="sns_qr_decode_succeeded" type="id" />
+    <item name="sns_qr_quit" type="id" />
+    <item name="sns_qr_restart_preview" type="id" />
+    <item name="sns_qr_return_scan_result" type="id" />
+
+
+    <item name="base_footer_bar_left_iv_go_back" type="id" />
+    <item name="slide_avatar_second" type="id" />
+
+    <item name="care_position" type="id" />
+    <item name="care_time_stamp" type="id" />
+    <item name="item_position" type="id" />
+
+    <!--##########可扩展TextView#########-->
+    <!-- 原始textview -->
+    <item name="expandable_id_show_textview" type="id"></item>
+    <!-- 收起展开按钮textview -->
+    <item name="expandable_id_more_textview" type="id"></item>
+    <item name="tag_timeline_position" type="id"></item>
+    <item name="tag_timeline_item" type="id"></item>
+</resources>

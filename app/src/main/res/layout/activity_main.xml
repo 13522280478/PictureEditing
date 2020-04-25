@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,44 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvSelectPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="选择相册"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"/>
+
+    <com.biotech.drawlessons.AvatarView
+        android:id="@+id/avatarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.biotech.drawlessons.RotatableViewGroup
+        android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvFront"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="FIRST HELLO WORLD" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="SECOND HELLO WORLD" />
+    </com.biotech.drawlessons.RotatableViewGroup>
+
+
+
+
+</RelativeLayout>

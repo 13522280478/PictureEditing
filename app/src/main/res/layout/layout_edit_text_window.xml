@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/Blk_1_alpha_30"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.biotech.drawlessons.photoedit.views.DetectBackEventEditText
+        android:id="@+id/edit_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/white"
+        android:scrollbars="vertical"
+        android:layout_centerInParent="true"
+        android:includeFontPadding="false"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:hint="1"
+        android:textColorHint="@color/transparent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/rl_footer"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:text="@string/cancel_sns"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/Blk_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:textSize="18dp"
+            android:paddingRight="14dp"
+            android:paddingLeft="14dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/finish"
+            android:textColor="@color/Ylw_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

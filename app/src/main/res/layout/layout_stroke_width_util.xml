@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="@dimen/stroke_width_util_width"
+    android:layout_height="@dimen/stroke_width_util_height"
+    android:orientation="vertical">
+    <com.biotech.drawlessons.photoedit.tools.StrokePointsView
+        android:id="@+id/stroke_points_view"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_width="@dimen/stroke_width_util_width" />
+    
+    <ImageView
+        android:id="@+id/iv_choose"
+        android:layout_width="@dimen/stroke_width_util_width"
+        android:layout_height="@dimen/stroke_width_util_width"
+        android:src="@drawable/paint_stroke_width_light"
+        android:layout_alignParentBottom="true"
+        android:scaleType="center" />
+</RelativeLayout>

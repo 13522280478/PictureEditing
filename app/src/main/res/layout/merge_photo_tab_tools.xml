@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <RelativeLayout
+        android:id="@+id/rl_utils"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.biotech.drawlessons.photoedit.tools.ColorPickerView
+            android:id="@+id/color_picker"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/color_pick_height"
+            android:visibility="gone" />
+
+        <com.biotech.drawlessons.photoedit.tools.StrokeUtilView
+            android:id="@+id/stroke_util_view"
+            android:layout_width="52dp"
+            android:layout_height="@dimen/stroke_width_util_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="66dp"
+            android:visibility="gone"
+            android:paddingLeft="14dp"/>
+
+        <ImageView
+            android:id="@+id/iv_draft"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_tool_height"
+            android:src="@drawable/ic_draft_normal_light"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:background="@color/white"/>
+    </RelativeLayout>
+</merge>

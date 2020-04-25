@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="41dp">
+
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="节日"
+        android:textColor="#929292"
+        android:textSize="13dp"/>
+
+    <View
+        android:id="@+id/v_left_line"
+        android:layout_width="32dp"
+        android:layout_height="0.5pt"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@id/tv_category"
+        android:background="#dadada"/>
+
+    <View
+        android:id="@+id/v_right_line"
+        android:layout_width="32dp"
+        android:layout_height="0.5pt"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/tv_category"
+        android:background="#dadada"/>
+</RelativeLayout>

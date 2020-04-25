@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+    <com.biotech.drawlessons.photoedit.views.RoundedImageView
+        android:id="@+id/img_item_resource"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="4dp"
+        />
+
+    <com.biotech.drawlessons.photoedit.views.RoundedImageView
+        android:id="@+id/img_item_resource_mask"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:src="#66000000"
+        app:riv_corner_radius="4dp"
+        android:visibility="gone"
+        />
+
+    <!-- 右下角下载图标 -->
+    <ImageView
+        android:id="@+id/img_resource_download"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@id/img_item_resource"
+        android:layout_alignRight="@id/img_item_resource"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/icon_photo_edit_resource_download_light"
+        android:visibility="gone"/>
+
+    <!-- 最下方的滤镜名称 -->
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="65dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@id/img_item_resource"
+        android:background="@drawable/item_background"
+        android:gravity="center"
+        android:text="日光"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        android:visibility="gone"/>
+</RelativeLayout>
