@@ -98,9 +98,9 @@ abstract class ShaderImageView extends androidx.appcompat.widget.AppCompatImageV
      * @param lightColor
      */
     public void setBorderColor(int lightColor){
-        pathHelper.borderColor = BaseApplication.getInstance().getResources().getColor(lightColor);
+        pathHelper.borderColor = lightColor;
         pathHelper.borderPaint.setColor(pathHelper.borderColor);
-        //invalidate();
+        invalidate();
     }
 
     public void setRadius(){
